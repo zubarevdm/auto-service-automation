@@ -1,0 +1,39 @@
+<!doctype html><html lang='ru'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Аудит входящих звонков: Демо-СТО «Гараж»</title><style>
+:root{--surface:#fcfcfb;--page:#f9f9f7;--ink:#0b0b0b;--ink2:#52514e;--muted:#898781;
+--grid:#e1e0d9;--bar:#2a78d6;--good:#006300;--bad:#d03b3b;--ring:rgba(11,11,11,.10)}
+@media (prefers-color-scheme:dark){:root{--surface:#1a1a19;--page:#0d0d0d;--ink:#fff;
+--ink2:#c3c2b7;--grid:#2c2c2a;--bar:#3987e5;--good:#0ca30c;--bad:#e66767;--ring:rgba(255,255,255,.10)}}
+*{box-sizing:border-box;margin:0}
+body{font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--page);
+color:var(--ink);padding:32px 16px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:22px;margin-bottom:4px}
+.sub{color:var(--ink2);margin-bottom:24px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-bottom:24px}
+.tile{background:var(--surface);border:1px solid var(--ring);border-radius:10px;padding:16px}
+.tile .v{font-size:28px;font-weight:700;font-variant-numeric:tabular-nums}
+.tile .l{color:var(--ink2);font-size:13px;margin-top:2px}
+.tile .v.good{color:var(--good)} .tile .v.bad{color:var(--bad)}
+.card{background:var(--surface);border:1px solid var(--ring);border-radius:10px;padding:20px;margin-bottom:20px}
+.card h2{font-size:15px;margin-bottom:14px}
+.row{display:grid;grid-template-columns:150px 1fr 130px;gap:10px;align-items:center;
+padding:7px 0;border-bottom:1px solid var(--grid);font-size:14px}
+.row:last-child{border-bottom:0}
+.row .name{color:var(--ink2)}
+.track{display:block;height:18px}
+.fill{display:block;background:var(--bar);height:18px;border-radius:0 4px 4px 0;min-width:2px}
+.val{text-align:right;font-variant-numeric:tabular-nums}
+.note{color:var(--muted);font-size:13px;margin-top:12px}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th{text-align:left;color:var(--muted);font-weight:500;padding:6px 8px;border-bottom:1px solid var(--grid)}
+td{padding:6px 8px;border-bottom:1px solid var(--grid);font-variant-numeric:tabular-nums}
+tr:last-child td{border-bottom:0}
+.foot{color:var(--muted);font-size:12px;margin-top:24px}
+</style></head><body><div class='wrap'><h1>Аудит входящих звонков: Демо-СТО «Гараж»</h1><p class='sub'>тайный покупатель · телефонная доступность</p>
+    <div class='tiles'>
+      <div class='tile'><div class='v'>6</div><div class='l'>тестовых звонков сделано</div></div>
+      <div class='tile'><div class='v bad'>4</div><div class='l'>остались без ответа</div></div>
+      <div class='tile'><div class='v bad'>67%</div><div class='l'>обращений теряется</div></div>
+      <div class='tile'><div class='v good'>792 000 ₽</div>
+        <div class='l'>выручки в месяц можно спасать (оценка)</div></div>
+    </div><div class='card'><h2>Журнал тестовых звонков</h2><table><tr><th>Когда</th><th>Результат</th><th>Комментарий</th></tr><tr><td>2026-07-09 10:10</td><td>ответили</td><td></td></tr><tr><td>2026-07-09 12:40</td><td>не взяли трубку</td><td></td></tr><tr><td>2026-07-09 18:20</td><td>не взяли трубку</td><td></td></tr><tr><td>2026-07-10 11:30</td><td>ответили</td><td></td></tr><tr><td>2026-07-10 17:45</td><td>занято</td><td></td></tr><tr><td>2026-07-10 19:05</td><td>не взяли трубку</td><td></td></tr></table><p class='note'>Оценка: при ~30 звонках в день доля потерь 67% даёт ~600 потерянных обращений в месяц; перехват трети из них с конверсией 50% и чеком 8 000 ₽ — 792 000 ₽/мес.</p></div><div class='card'><h2>Что предлагаем</h2><p>Переадресация непринятых звонков на умный номер: клиент в течение минуты получает SMS от вашего имени, бот записывает его в свободный слот, администратор получает уведомление. Еженедельный отчёт — каждая спасённая запись поимённо. Внедрение — одна настройка у оператора, без изменений в вашей работе.</p></div><p class='foot'>Сформировано автоматически · сервис «Перехват»</p></div></body></html>

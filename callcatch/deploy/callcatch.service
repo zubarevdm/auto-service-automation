@@ -1,0 +1,19 @@
+[Unit]
+Description=Callcatch — перехват потерянных обращений для автосервисов
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/callcatch
+EnvironmentFile=/opt/callcatch/.env
+ExecStart=/usr/bin/python3 -m callcatch serve
+Restart=always
+RestartSec=3
+# безопасность
+NoNewPrivileges=true
+ProtectSystem=strict
+ReadWritePaths=/opt/callcatch/data /opt/callcatch/output
+ProtectHome=true
+
+[Install]
+WantedBy=multi-user.target
